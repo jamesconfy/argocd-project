@@ -15,4 +15,3 @@ spec:
     path: helm
     repoURL: https://github.com/jamesconfy/argocd-project
     targetRevision: HEAD
-  syncPolicy: {}
