@@ -1,0 +1,8 @@
+namespace:
+  name: demo
+
+image:
+  repository: everybody8/python-helloworld
+  tag: v1.0
+
+replicaCount: 3
