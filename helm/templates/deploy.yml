@@ -10,7 +10,11 @@ spec:
   selector:
     matchLabels:
       app: python-helloworld
-  strategy: {}
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
   template:
     metadata:
       labels:
@@ -19,6 +23,6 @@ spec:
       containers:
       - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
         name: python-helloworld
-        resources: {}
+        imagePullPolicy: IfNotPresent
 status: {}
 

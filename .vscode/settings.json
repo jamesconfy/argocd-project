@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/iterative/dvcyaml-schema/master/schema.json": "file:///Users/mac/Downloads/Python%20Projects/nd064_course_1/project/helm/templates/namespace.yml"
+    }
+}
